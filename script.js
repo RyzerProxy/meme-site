@@ -1,5 +1,5 @@
 function loadMemes() {
-  fetch("https://meme-api.herokuapp.com/gimme")
+  fetch("https://meme-api.com/gimme")
     .then((res) => res.json())
     .then((data) => (document.getElementById("meme").src = data.preview[2]));
 }
